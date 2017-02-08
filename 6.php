@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>JavaScript function to validate whether a given value is object or not.</title>
+</head>
+<body>
+
+</body>
+</html>
+JavaScript Code :
+
+function is_object(value)
+        {
+        var datatype = typeof value;
+        return datatype === 'function' || datatype === 'object' && !!value;
+       }
+
+console.log(is_object({name: 'Robert'}));
+
+console.log(is_object('bar'));
+
+console.log(is_object(72));
